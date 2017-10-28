@@ -28,7 +28,7 @@ function viewCart() {
         let name = Object.keys(cart[i])[0]
         let value = (cart[i][name]);
 
-        if(cart.length === 2) {
+        if(i === cart.length - 1 && i !== 0) {
         // if(i === cart.length - 1 && i !== 0) {
           cartPhrase.push(`and ${name} at $${value}`)
         } else {
