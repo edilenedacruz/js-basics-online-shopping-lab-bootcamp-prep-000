@@ -30,6 +30,7 @@ function viewCart() {
         let value = (cart[i][name]);
     console.log(`${inYour} ${name} at $${value}.`)
   }
+}
     // else {
 //
 //       for(let i = 0; i < cart.length; i++) {
