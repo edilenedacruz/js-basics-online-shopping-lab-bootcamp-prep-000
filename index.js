@@ -50,7 +50,7 @@ function total() {
   let i = 0
 
   while(i < cart.length) {
-    totalCost += parseInt(Object.values(cart[i]))
+    totalCost += parseInt(Object.keys(cart[i]))
   }
   return totalCost
 }
