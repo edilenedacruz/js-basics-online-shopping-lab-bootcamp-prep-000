@@ -36,7 +36,7 @@ function viewCart() {
   }
 
   if(cart.length >= 3) {
-    cartPhrase = cartPhrase.join(",")
+    cartPhrase = cartPhrase.join(", ")
   } if(cart.length === 2) {
     cartPhrase = cartPhrase.join(" ")
   }
