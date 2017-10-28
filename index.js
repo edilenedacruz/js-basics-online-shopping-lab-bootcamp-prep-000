@@ -46,11 +46,11 @@ function viewCart() {
 }
 
 function total() {
-  let totalCost = []
+  let totalCost = 0
   let i = 0
 
   while(i < cart.length) {
-    
+    Object.keys(cart[i])[0]
   }
 }
 
