@@ -34,7 +34,7 @@ function viewCart() {
           cartPhrase.push(`${name} at $${value}`)
         }
   }
-}
+
   if(cart.length >= 3) {
     cartPhrase = cartPhrase.join(",")
   } else if (cart.length === 2) {
@@ -42,26 +42,7 @@ function viewCart() {
   }
   console.log(`In your cart, you have ${cartPhrase}`)
 }
-    // else {
-//
-//       for(let i = 0; i < cart.length; i++) {
-//         let name = Object.keys(cart[i][0])
-//         let value = (cart[i][name]);
-//
-//       if(i === cart.length - 1 && i !== 0) {
-//         cartPhrase.push(`and ${name} at $${value}`)
-//       } else {
-//         cartPhrase.push(`${name} at $${value}`)
-//       }
-//   }
-//
-//   if(cart.length >= 3) {
-//     let final = cartPhrase.join(",")
-//   } else if (cart.length === 2) {
-//     final = cartPhrase.join(" ")
-//   }
-//   console.log(`${inYour} + ${final}`)
-// }
+
 }
 
 function total() {
