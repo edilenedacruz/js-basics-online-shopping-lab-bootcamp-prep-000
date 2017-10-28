@@ -31,7 +31,7 @@ function viewCart() {
         if(i === cart.length-1 && i !== 0) {
           cartPhrase.push(`and ${name} at $${value}`)
         } else {
-          cartPhrase.push(`${name} at $${cost}`)
+          cartPhrase.push(`${name} at $${value}`)
         }
   }
 
