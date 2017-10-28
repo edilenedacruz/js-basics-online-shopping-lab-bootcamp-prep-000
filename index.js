@@ -19,7 +19,6 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  let inYour = "In your cart, you have";
   let cartPhrase = []
 //
   if (cart.length === 0) {
@@ -28,8 +27,20 @@ function viewCart() {
       for(let i = 0; i < cart.length; i++) {
         let name = Object.keys(cart[i][0])
         let value = (cart[i][name]);
-    console.log(`${inYour} ${name} at $${value}.`)
+
+        if(i === cart.length - 1 && i !== 0) {
+          cartPhrase.push(`and ${name} at $${value}`)
+        } else {
+          cartPhrase.push(`${name} at $${cost}`)
+        }
   }
+
+  if(cart.length >= 3) {
+    cartPhrase = cartPhrase.join(",")
+  } else if (cart.length === 2) {
+    cartPhrase = cartPhrase.join(" ")
+  }
+  console.log(`In your cart, you have ${cartPhrase}`)
 }
     // else {
 //
