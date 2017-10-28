@@ -37,7 +37,7 @@ function viewCart() {
 
   if(cart.length >= 3) {
     cartPhrase = cartPhrase.join(",")
-  } else if (cart.length === 2) {
+  } if(cart.length === 2) {
     cartPhrase = cartPhrase.join(" ")
   }
   console.log(`In your cart, you have ${cartPhrase}`)
