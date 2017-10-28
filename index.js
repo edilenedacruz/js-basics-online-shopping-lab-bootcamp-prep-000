@@ -34,7 +34,7 @@ function viewCart() {
           cartPhrase.push(`${name} at $${value}`)
         }
   }
-
+}
   if(cart.length >= 3) {
     cartPhrase = cartPhrase.join(",")
   } else if (cart.length === 2) {
