@@ -40,7 +40,7 @@ function viewCart() {
   } if(cart.length === 2) {
     cartPhrase = cartPhrase.join(" ")
   }
-  console.log(`In your cart, you have ${cartPhrase}`)
+  console.log(`In your cart, you have ${cartPhrase}.`)
 }
 
 }
