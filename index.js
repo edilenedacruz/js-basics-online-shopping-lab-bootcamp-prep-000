@@ -50,7 +50,10 @@ function total() {
   let i = 0
 
   while(i < cart.length) {
-    totalCost += Object.keys((cart[i]))[0])
+    let item = cart[i]
+    let name = Object.keys(cart[i])[0]
+    let value = (cart[i][name]);
+    totalCost += value
   }
   return totalCost
 }
