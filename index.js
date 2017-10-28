@@ -19,12 +19,17 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // let inYour = "In your cart, you have";
-//   let cartPhrase = []
+  let inYour = "In your cart, you have";
+  let cartPhrase = []
 //
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.")
-    }
+  } else {
+      for(let i = 0; i < cart.length; i++) {
+        let name = Object.keys(cart[i][0])
+        let value = (cart[i][name]);
+    console.log(`${inYour} ${name} at $${value}.`)
+  }
     // else {
 //
 //       for(let i = 0; i < cart.length; i++) {
