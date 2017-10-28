@@ -50,8 +50,9 @@ function total() {
   let i = 0
 
   while(i < cart.length) {
-    Object.keys(cart[i])[0]
+    totalCost += parseInt(Object.values(cart[i]))
   }
+  return totalCost
 }
 
 function removeFromCart(item) {
